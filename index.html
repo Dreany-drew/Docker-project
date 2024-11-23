@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre DIBI - Introduction</title>
+    <style>
+        /* Reset and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #2a2a72, #009ffd);
+            color: #fff;
+            line-height: 1.6;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            color: #1c3c2f;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-shadow: 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99;
+        }
+
+        header h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            margin-top: 10px;
+            color: #00ff99;
+        }
+
+        /* Bio Section */
+        .bio p {
+            font-size: 1.2em;
+            color: #ddd;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            transition: all 0.3s ease;
+        }
+
+        .bio p:hover {
+            color: #00ff99;
+            transform: translateX(5px);
+        }
+
+        /* Summary Section */
+        .summary {
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #ddd;
+            text-align: center;
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        .summary:hover {
+            color: #00ff99;
+        }
+
+        /* Skills Table */
+        .skills-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .skills-table th, .skills-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills-table th {
+            background-color: #00ff99;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .skills-table td {
+            background-color: #1a1a1a;
+        }
+
+        .skills-table tr:hover td {
+            background-color: #00ff99;
+            color: #000;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .contact h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #00ff99;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact li {
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .contact li:hover {
+            transform: scale(1.2);
+        }
+
+        .contact a {
+            color: #00ff99;
+            text-decoration: none;
+            font-weight: bold;
+            transition: text-decoration 0.3s ease;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Resume Link */
+        .resume-link a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #00ff99;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px 20px;
+            border: 2px solid #00ff99;
+            border-radius: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .resume-link a:hover {
+            transform: translateY(-5px);
+            background-color: #00ff99;
+            color: #000;
+        }
+
+        /* Footer Section */
+        footer {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #ddd;
+            text-align: center;
+        }
+
+        footer a {
+            color: #00ff99;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Andre DIBI</h1>
+            <h2>Aspiring Software Engineer</h2>
+        </header>
+
+        <!-- Bio Section -->
+        <section class="bio">
+            <p><strong>Certified AWS Professional</strong> with a deep understanding of designing, deploying, and optimizing cloud solutions. Currently transitioning into IT, focusing on software engineering, and exploring technologies like Docker. My expertise includes AWS services such as EC2, S3, Lambda, and more, which I have applied to real-world scenarios in cloud migration and infrastructure optimization.</p>
+            <p>My professional journey has involved <strong>architecting secure, scalable cloud infrastructures</strong> and implementing cloud-based solutions. I am passionate about learning new technologies and constantly improving my technical skills in the world of cloud computing and software engineering.</p>
+            <p>My goal is to take on a managerial role where I can combine my technical expertise with leadership skills to drive impactful projects.</p>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="summary">
+            <p>A dynamic individual transitioning into software engineering, combining cloud expertise and a passion for technology. Ready to tackle challenges and lead projects in the IT sector.</p>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section class="skills">
+            <h2>Core Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Skills</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AWS Services</td>
+                        <td>EC2, S3, RDS, Lambda, DynamoDB, Route 53, CloudFront, VPC, IAM</td>
+                    </tr>
+                    <tr>
+                        <td>Infrastructure as Code</td>
+                        <td>AWS CloudFormation, AWS CDK, Ansible</td>
+                    </tr>
+                    <tr>
+                        <td>Networking</td>
+                        <td>VPC Design, Subnets, Route Tables, VPN, Security Groups</td>
+                    </tr>
+                    <tr>
+                        <td>Security & Compliance</td>
+                        <td>IAM Roles/Policies, AWS KMS, CloudTrail, GuardDuty</td>
+                    </tr>
+                    <tr>
+                        <td>Automation & DevOps</td>
+                        <td>Jenkins, AWS CodeBuild, CodePipeline</td>
+                    </tr>
+                    <tr>
+                        <td>Serverless Architecture</td>
+                        <td>AWS Lambda, API Gateway, Step Functions</td>
+                    </tr>
+                    <tr>
+                        <td>Disaster Recovery & High Availability</td>
+                        <td>Multi-AZ Architectures, Backup Strategies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h3>Contact Information</h3>
+            <ul>
+                <li><a href="tel:+1234567890">📞 +1 9784018578</a></li>
+                <li><a href="mailto:andre.dibi@example.com">📧 adolindibi@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/adolin-dibi-136730162/" target="_blank">🔗 LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <!-- Resume Link -->
+        <div class="resume-link">
+            <a href="http://eatgoodeveryday.com.s3-website-us-east-1.amazonaws.com/" target="_blank">📄 View My Resume</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Design by <a href="https://www.instagram.com/iamvndredibi/">Andre Dibi</a></p>
+    </footer>
+</body>
+</html>
